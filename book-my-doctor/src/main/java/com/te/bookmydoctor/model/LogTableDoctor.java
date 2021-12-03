@@ -1,4 +1,4 @@
-package com.te.springboot.bookmydoc.model;
+package com.te.bookmydoctor.model;
 
 import java.io.Serializable;
 
@@ -17,12 +17,12 @@ import lombok.NoArgsConstructor;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-public class LogTablePatient implements Serializable {
+public class LogTableDoctor implements Serializable{
 	@Id
-	@SequenceGenerator(name = "log_patient_sequence_generator",initialValue = 100,allocationSize = 5)
-	@GeneratedValue(generator = "log_patient_sequence_generator")
+	@SequenceGenerator(name = "log_doctor_sequence_generator",initialValue = 100,allocationSize = 5)
+	@GeneratedValue(generator = "log_doctor_sequence_generator")
 	private Integer log_id;
-	private String patient_name;
+	private String doctor_name;
 	private String action;
 	private String message;
 	@ManyToOne

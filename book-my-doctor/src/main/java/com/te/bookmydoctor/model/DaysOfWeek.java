@@ -1,4 +1,4 @@
-package com.te.springboot.bookmydoc.model;
+package com.te.bookmydoctor.model;
 
 import java.io.Serializable;
 
@@ -13,21 +13,21 @@ import javax.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 @SuppressWarnings("serial")
 @Data
 @Entity
-@AllArgsConstructor
 @NoArgsConstructor
-public class Language implements Serializable{
+@AllArgsConstructor
+public class DaysOfWeek implements Serializable{
+	
 	@Id
-	@SequenceGenerator(name = "language_sequence_generator",initialValue = 100,allocationSize = 5)
-	@GeneratedValue(generator = "language_sequence_generator")
-	private Integer language_Id;
-	@NotNull(message = "Language cannot be null")
-	private String language;
+	@SequenceGenerator(name = "daysofweek_sequence_generator",initialValue = 100,allocationSize = 5)
+	@GeneratedValue(generator = "daysofweek_sequence_generator")
+	private Integer days_id;
+	@NotNull(message = "Day cannot be null")
+	private String day;
 	@ManyToOne
-	@JoinColumn(name = "doctor_id")
-	private Doctor doctor;
+	@JoinColumn(name = "availability_id")
+	private DoctorAvailability doctorAvailability;
 
 }

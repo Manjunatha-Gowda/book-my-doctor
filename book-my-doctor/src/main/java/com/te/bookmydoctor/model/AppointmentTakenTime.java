@@ -1,4 +1,4 @@
-package com.te.springboot.bookmydoc.model;
+package com.te.bookmydoctor.model;
 
 import java.time.LocalTime;
 

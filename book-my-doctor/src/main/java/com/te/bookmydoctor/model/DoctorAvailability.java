@@ -1,4 +1,4 @@
-package com.te.springboot.bookmydoc.model;
+package com.te.bookmydoctor.model;
 
 import java.io.Serializable;
 import java.util.Date;
