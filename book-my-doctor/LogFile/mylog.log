@@ -1,0 +1,617 @@
+2021-12-03 00:49:51,742 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 17060 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 00:49:51,765 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 00:49:52,324 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-12-03 00:49:52,327 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-12-03 00:49:57,485 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 00:49:57,535 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces. 
+2021-12-03 00:49:59,621 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 00:49:59,651 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 00:49:59,653 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 00:50:00,290 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 00:50:00,292 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 7942 ms 
+2021-12-03 00:50:01,350 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 00:50:01,618 [restartedMain] [36mo.h.Version[0;39m - HHH000412: Hibernate ORM core version 5.6.1.Final 
+2021-12-03 00:50:02,648 [restartedMain] [36mo.h.a.c.Version[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-12-03 00:50:03,116 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Starting... 
+2021-12-03 00:50:03,724 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Start completed. 
+2021-12-03 00:50:03,942 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 00:50:04,761 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Failed to initialize JPA EntityManagerFactory: Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements: com.te.springboot.bookmydoc.model.Role.admin 
+2021-12-03 00:50:04,764 [restartedMain] [36mo.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements: com.te.springboot.bookmydoc.model.Role.admin 
+2021-12-03 00:50:04,773 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated... 
+2021-12-03 00:50:04,804 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed. 
+2021-12-03 00:50:04,810 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Stopping service [Tomcat] 
+2021-12-03 00:50:04,858 [restartedMain] [36mo.s.b.a.l.ConditionEvaluationReportLoggingListener[0;39m - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2021-12-03 00:50:05,062 [restartedMain] [36mo.s.b.SpringApplication[0;39m - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements: com.te.springboot.bookmydoc.model.Role.admin
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.te.springboot.bookmydoc.BookMyDocApplication.main(BookMyDocApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: Illegal attempt to map a non collection as a @OneToMany, @ManyToMany or @CollectionOfElements: com.te.springboot.bookmydoc.model.Role.admin
+	at org.hibernate.cfg.annotations.CollectionBinder.getCollectionBinder(CollectionBinder.java:323)
+	at org.hibernate.cfg.AnnotationBinder.processElementAnnotations(AnnotationBinder.java:1986)
+	at org.hibernate.cfg.AnnotationBinder.processIdPropertiesIfNotAlready(AnnotationBinder.java:982)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:807)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:225)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 21 common frames omitted
+2021-12-03 00:53:01,146 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 13868 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 00:53:01,149 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 00:53:01,349 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-12-03 00:53:01,351 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-12-03 00:53:03,485 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 00:53:03,523 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces. 
+2021-12-03 00:53:05,152 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 00:53:05,175 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 00:53:05,176 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 00:53:05,713 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 00:53:05,714 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 4361 ms 
+2021-12-03 00:53:06,123 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 00:53:06,224 [restartedMain] [36mo.h.Version[0;39m - HHH000412: Hibernate ORM core version 5.6.1.Final 
+2021-12-03 00:53:06,633 [restartedMain] [36mo.h.a.c.Version[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-12-03 00:53:07,137 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Starting... 
+2021-12-03 00:53:07,628 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Start completed. 
+2021-12-03 00:53:07,676 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 00:53:19,129 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 00:53:19,160 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 00:53:19,303 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 00:53:20,450 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 00:53:20,565 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 00:53:20,598 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 21.147 seconds (JVM running for 23.985) 
+2021-12-03 01:49:41,238 [HikariPool-1 housekeeper] [36mc.z.h.p.HikariPool[0;39m - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m32s913ms970µs500ns). 
+2021-12-03 01:49:48,908 [RMI TCP Connection(32)-127.0.0.1] [36mo.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[0;39m - Application shutdown requested. 
+2021-12-03 01:49:48,989 [RMI TCP Connection(32)-127.0.0.1] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 01:49:49,002 [RMI TCP Connection(32)-127.0.0.1] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated... 
+2021-12-03 01:49:49,030 [RMI TCP Connection(32)-127.0.0.1] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed. 
+2021-12-03 02:08:09,945 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 12388 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 02:08:09,953 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 02:08:10,157 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-12-03 02:08:10,158 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-12-03 02:08:12,270 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 02:08:12,315 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces. 
+2021-12-03 02:08:13,936 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 02:08:13,959 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 02:08:13,960 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 02:08:14,390 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 02:08:14,392 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 4232 ms 
+2021-12-03 02:08:14,913 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 02:08:15,028 [restartedMain] [36mo.h.Version[0;39m - HHH000412: Hibernate ORM core version 5.6.1.Final 
+2021-12-03 02:08:15,482 [restartedMain] [36mo.h.a.c.Version[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-12-03 02:08:15,935 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Starting... 
+2021-12-03 02:08:16,325 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Start completed. 
+2021-12-03 02:08:16,442 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 02:08:23,220 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 02:08:23,243 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 02:08:23,362 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 02:08:24,369 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 02:08:24,469 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 02:08:24,510 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 16.354 seconds (JVM running for 20.176) 
+2021-12-03 02:09:44,512 [RMI TCP Connection(4)-127.0.0.1] [36mo.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[0;39m - Application shutdown requested. 
+2021-12-03 02:09:44,588 [RMI TCP Connection(4)-127.0.0.1] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 02:09:44,597 [RMI TCP Connection(4)-127.0.0.1] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated... 
+2021-12-03 02:09:44,650 [RMI TCP Connection(4)-127.0.0.1] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed. 
+2021-12-03 02:24:12,279 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 13292 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 02:24:12,282 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 02:24:12,474 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-12-03 02:24:12,475 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-12-03 02:24:14,712 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 02:24:14,758 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 17 ms. Found 0 JPA repository interfaces. 
+2021-12-03 02:24:16,502 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 02:24:16,525 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 02:24:16,526 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 02:24:16,845 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 02:24:16,847 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 4370 ms 
+2021-12-03 02:24:17,423 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 02:24:17,520 [restartedMain] [36mo.h.Version[0;39m - HHH000412: Hibernate ORM core version 5.6.1.Final 
+2021-12-03 02:24:17,869 [restartedMain] [36mo.h.a.c.Version[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-12-03 02:24:18,092 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Starting... 
+2021-12-03 02:24:18,583 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Start completed. 
+2021-12-03 02:24:18,648 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 02:24:22,539 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 02:24:22,566 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 02:24:22,698 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 02:24:23,721 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 02:24:23,821 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 02:24:23,859 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 15.175 seconds (JVM running for 19.695) 
+2021-12-03 02:24:28,913 [RMI TCP Connection(2)-127.0.0.1] [36mo.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[0;39m - Application shutdown requested. 
+2021-12-03 02:24:28,975 [RMI TCP Connection(2)-127.0.0.1] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 02:24:28,984 [RMI TCP Connection(2)-127.0.0.1] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated... 
+2021-12-03 02:24:29,011 [RMI TCP Connection(2)-127.0.0.1] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed. 
+2021-12-03 02:37:06,688 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 17736 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 02:37:06,692 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 02:37:07,008 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-12-03 02:37:07,014 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-12-03 02:37:08,786 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 02:37:08,815 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces. 
+2021-12-03 02:37:10,307 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 02:37:10,332 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 02:37:10,334 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 02:37:10,673 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 02:37:10,674 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 3657 ms 
+2021-12-03 02:37:11,039 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 02:37:11,136 [restartedMain] [36mo.h.Version[0;39m - HHH000412: Hibernate ORM core version 5.6.1.Final 
+2021-12-03 02:37:11,465 [restartedMain] [36mo.h.a.c.Version[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-12-03 02:37:11,760 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Starting... 
+2021-12-03 02:37:12,129 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Start completed. 
+2021-12-03 02:37:12,186 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 02:37:15,786 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 02:37:15,808 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 02:37:15,962 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 02:37:16,712 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 02:37:16,801 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 02:37:16,826 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 11.913 seconds (JVM running for 16.39) 
+2021-12-03 02:38:30,860 [Thread-5] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 02:38:30,868 [Thread-5] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated... 
+2021-12-03 02:38:30,913 [Thread-5] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed. 
+2021-12-03 02:38:31,481 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 17736 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 02:38:31,484 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 02:38:32,854 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 02:38:32,860 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces. 
+2021-12-03 02:38:33,365 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 02:38:33,373 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 02:38:33,376 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 02:38:33,452 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 02:38:33,453 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 1954 ms 
+2021-12-03 02:38:33,896 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 02:38:33,911 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Starting... 
+2021-12-03 02:38:33,925 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Start completed. 
+2021-12-03 02:38:33,926 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 02:57:30,679 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 7312 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 02:57:30,688 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 02:57:31,061 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-12-03 02:57:31,067 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-12-03 02:57:33,022 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 02:57:33,060 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces. 
+2021-12-03 02:57:35,207 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 02:57:35,236 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 02:57:35,260 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 02:57:35,653 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 02:57:35,655 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 4584 ms 
+2021-12-03 02:57:36,211 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 02:57:36,349 [restartedMain] [36mo.h.Version[0;39m - HHH000412: Hibernate ORM core version 5.6.1.Final 
+2021-12-03 02:57:36,722 [restartedMain] [36mo.h.a.c.Version[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-12-03 02:57:36,981 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Starting... 
+2021-12-03 02:57:37,636 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Start completed. 
+2021-12-03 02:57:37,757 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 02:57:42,010 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 02:57:42,029 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 02:57:42,169 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 02:57:43,274 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 02:57:43,372 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 02:57:43,410 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 14.409 seconds (JVM running for 17.461) 
+2021-12-03 03:00:38,531 [Thread-5] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 03:00:38,539 [Thread-5] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated... 
+2021-12-03 03:00:38,614 [Thread-5] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed. 
+2021-12-03 03:00:39,581 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 7312 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 03:00:39,584 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 03:00:40,752 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 03:00:40,765 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces. 
+2021-12-03 09:11:55,848 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 17912 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 09:11:55,852 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 09:11:56,068 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-12-03 09:11:56,070 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-12-03 09:11:58,193 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 09:11:58,357 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 23 ms. Found 0 JPA repository interfaces. 
+2021-12-03 09:12:00,582 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 09:12:00,605 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 09:12:00,606 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 09:12:00,983 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 09:12:00,992 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 4915 ms 
+2021-12-03 09:12:01,491 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 09:12:01,652 [restartedMain] [36mo.h.Version[0;39m - HHH000412: Hibernate ORM core version 5.6.1.Final 
+2021-12-03 09:12:02,234 [restartedMain] [36mo.h.a.c.Version[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-12-03 09:12:02,865 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Starting... 
+2021-12-03 09:12:03,310 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Start completed. 
+2021-12-03 09:12:03,469 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 09:12:09,306 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 09:12:09,330 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 09:12:09,551 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 09:12:10,675 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 09:12:11,158 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 09:12:11,182 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 17.63 seconds (JVM running for 20.615) 
+2021-12-03 09:14:40,843 [RMI TCP Connection(6)-127.0.0.1] [36mo.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[0;39m - Application shutdown requested. 
+2021-12-03 09:14:40,915 [RMI TCP Connection(6)-127.0.0.1] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 09:14:40,923 [RMI TCP Connection(6)-127.0.0.1] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated... 
+2021-12-03 09:14:41,188 [RMI TCP Connection(6)-127.0.0.1] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed. 
+2021-12-03 09:14:51,685 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 19420 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 09:14:51,689 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 09:14:52,115 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-12-03 09:14:52,116 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-12-03 09:14:54,997 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 09:14:55,036 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces. 
+2021-12-03 09:14:56,736 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 09:14:56,762 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 09:14:56,763 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 09:14:57,070 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 09:14:57,071 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 4953 ms 
+2021-12-03 09:14:57,536 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 09:14:57,721 [restartedMain] [36mo.h.Version[0;39m - HHH000412: Hibernate ORM core version 5.6.1.Final 
+2021-12-03 09:14:58,100 [restartedMain] [36mo.h.a.c.Version[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-12-03 09:14:58,357 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Starting... 
+2021-12-03 09:14:58,937 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Start completed. 
+2021-12-03 09:14:59,015 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 09:15:12,998 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 09:15:13,026 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 09:15:13,283 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 09:15:14,349 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 09:15:14,469 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 09:15:14,502 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 24.117 seconds (JVM running for 27.514) 
+2021-12-03 09:26:45,027 [Thread-5] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 09:26:45,035 [Thread-5] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated... 
+2021-12-03 09:26:45,068 [Thread-5] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed. 
+2021-12-03 09:26:45,735 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 19420 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 09:26:45,738 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 09:26:46,480 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 09:26:46,487 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces. 
+2021-12-03 09:26:46,859 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 09:26:46,861 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 09:26:46,862 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 09:26:46,992 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 09:26:46,993 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 1248 ms 
+2021-12-03 09:26:47,217 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 09:26:47,233 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Starting... 
+2021-12-03 09:26:47,258 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Start completed. 
+2021-12-03 09:26:47,262 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 09:26:49,311 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 09:26:49,312 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 09:26:49,360 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 09:26:49,859 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 09:26:49,897 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 09:26:49,913 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 4.359 seconds (JVM running for 722.926) 
+2021-12-03 09:26:49,926 [restartedMain] [36mo.s.b.d.a.ConditionEvaluationDeltaLoggingListener[0;39m - Condition evaluation unchanged 
+2021-12-03 09:26:51,540 [RMI TCP Connection(14)-127.0.0.1] [36mo.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[0;39m - Application shutdown requested. 
+2021-12-03 09:26:51,600 [RMI TCP Connection(14)-127.0.0.1] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 09:26:51,663 [RMI TCP Connection(14)-127.0.0.1] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Shutdown initiated... 
+2021-12-03 09:26:51,731 [RMI TCP Connection(14)-127.0.0.1] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Shutdown completed. 
+2021-12-03 09:33:23,961 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 22420 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 09:33:23,964 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 09:33:24,168 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-12-03 09:33:24,170 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-12-03 09:33:26,408 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 09:33:26,446 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces. 
+2021-12-03 09:33:28,102 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 09:33:28,129 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 09:33:28,130 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 09:33:28,632 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 09:33:28,634 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 4461 ms 
+2021-12-03 09:33:28,979 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 09:33:29,124 [restartedMain] [36mo.h.Version[0;39m - HHH000412: Hibernate ORM core version 5.6.1.Final 
+2021-12-03 09:33:29,508 [restartedMain] [36mo.h.a.c.Version[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-12-03 09:33:29,988 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Starting... 
+2021-12-03 09:33:30,592 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Start completed. 
+2021-12-03 09:33:30,690 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 09:34:32,418 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 3744 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 09:34:32,423 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 09:34:32,633 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-12-03 09:34:32,635 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-12-03 09:34:34,918 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 09:34:34,958 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces. 
+2021-12-03 09:34:36,601 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 09:34:36,625 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 09:34:36,626 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 09:34:37,077 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 09:34:37,079 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 4442 ms 
+2021-12-03 09:34:37,469 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 09:34:37,623 [restartedMain] [36mo.h.Version[0;39m - HHH000412: Hibernate ORM core version 5.6.1.Final 
+2021-12-03 09:34:37,994 [restartedMain] [36mo.h.a.c.Version[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-12-03 09:34:38,369 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Starting... 
+2021-12-03 09:34:38,798 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Start completed. 
+2021-12-03 09:34:38,912 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 09:34:43,922 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 09:34:43,940 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 09:34:44,109 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 09:34:45,218 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 09:34:45,320 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 09:34:45,354 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 14.555 seconds (JVM running for 18.986) 
+2021-12-03 09:51:18,825 [Thread-5] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 09:51:18,832 [Thread-5] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated... 
+2021-12-03 09:51:18,885 [Thread-5] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed. 
+2021-12-03 09:51:19,362 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 3744 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 09:51:19,366 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 09:51:19,856 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 09:51:19,860 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces. 
+2021-12-03 09:51:20,303 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 09:51:20,305 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 09:51:20,309 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 09:51:20,370 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 09:51:20,370 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 994 ms 
+2021-12-03 09:51:20,464 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 09:51:20,473 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Starting... 
+2021-12-03 09:51:20,482 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Start completed. 
+2021-12-03 09:51:20,483 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 09:51:21,859 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 09:51:21,859 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 09:51:21,893 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 09:51:22,125 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 09:51:22,159 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 09:51:22,167 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 2.928 seconds (JVM running for 1015.8) 
+2021-12-03 09:51:22,173 [restartedMain] [36mo.s.b.d.a.ConditionEvaluationDeltaLoggingListener[0;39m - Condition evaluation unchanged 
+2021-12-03 09:53:50,735 [Thread-7] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 09:53:50,737 [Thread-7] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Shutdown initiated... 
+2021-12-03 09:53:50,755 [Thread-7] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Shutdown completed. 
+2021-12-03 09:53:51,322 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 3744 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 09:53:51,323 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 09:53:51,784 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 09:53:51,791 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces. 
+2021-12-03 09:53:52,082 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 09:53:52,084 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 09:53:52,086 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 09:53:52,155 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 09:53:52,156 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 823 ms 
+2021-12-03 09:53:52,228 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 09:53:52,242 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-3 - Starting... 
+2021-12-03 09:53:52,255 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-3 - Start completed. 
+2021-12-03 09:53:52,256 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 09:53:53,744 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 09:53:53,745 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 09:53:53,784 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 09:53:54,023 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 09:53:54,059 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 09:53:54,065 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 2.851 seconds (JVM running for 1167.698) 
+2021-12-03 09:53:54,068 [restartedMain] [36mo.s.b.d.a.ConditionEvaluationDeltaLoggingListener[0;39m - Condition evaluation unchanged 
+2021-12-03 09:53:55,507 [RMI TCP Connection(24)-127.0.0.1] [36mo.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[0;39m - Application shutdown requested. 
+2021-12-03 09:53:55,537 [RMI TCP Connection(24)-127.0.0.1] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 09:53:55,539 [RMI TCP Connection(24)-127.0.0.1] [36mc.z.h.HikariDataSource[0;39m - HikariPool-3 - Shutdown initiated... 
+2021-12-03 09:53:55,548 [RMI TCP Connection(24)-127.0.0.1] [36mc.z.h.HikariDataSource[0;39m - HikariPool-3 - Shutdown completed. 
+2021-12-03 10:19:14,913 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 9408 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 10:19:14,917 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 10:19:15,095 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-12-03 10:19:15,096 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-12-03 10:19:16,876 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 10:19:16,915 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces. 
+2021-12-03 10:19:18,594 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 10:19:18,620 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 10:19:18,636 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 10:19:18,986 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 10:19:18,987 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 3889 ms 
+2021-12-03 10:19:19,295 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 10:19:19,396 [restartedMain] [36mo.h.Version[0;39m - HHH000412: Hibernate ORM core version 5.6.1.Final 
+2021-12-03 10:19:19,872 [restartedMain] [36mo.h.a.c.Version[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-12-03 10:19:20,270 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Starting... 
+2021-12-03 10:19:20,600 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Start completed. 
+2021-12-03 10:19:20,655 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 10:19:25,604 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 10:19:25,619 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 10:19:25,733 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 10:19:26,637 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 10:19:26,717 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 10:19:26,733 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 13.847 seconds (JVM running for 16.174) 
+2021-12-03 10:20:10,524 [RMI TCP Connection(4)-127.0.0.1] [36mo.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[0;39m - Application shutdown requested. 
+2021-12-03 10:20:10,571 [RMI TCP Connection(4)-127.0.0.1] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 10:20:10,576 [RMI TCP Connection(4)-127.0.0.1] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated... 
+2021-12-03 10:20:10,596 [RMI TCP Connection(4)-127.0.0.1] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed. 
+2021-12-03 10:20:19,462 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 19500 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 10:20:19,465 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 10:20:19,632 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-12-03 10:20:19,634 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-12-03 10:20:21,319 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 10:20:21,351 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 12 ms. Found 0 JPA repository interfaces. 
+2021-12-03 10:20:22,660 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 10:20:22,678 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 10:20:22,679 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 10:20:23,045 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 10:20:23,046 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 3411 ms 
+2021-12-03 10:20:23,311 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 10:20:23,423 [restartedMain] [36mo.h.Version[0;39m - HHH000412: Hibernate ORM core version 5.6.1.Final 
+2021-12-03 10:20:23,755 [restartedMain] [36mo.h.a.c.Version[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-12-03 10:20:23,986 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Starting... 
+2021-12-03 10:20:24,428 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Start completed. 
+2021-12-03 10:20:24,476 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 10:20:36,176 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 10:20:36,192 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 10:20:36,293 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 10:20:37,087 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 10:20:37,179 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 10:20:37,198 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 19.055 seconds (JVM running for 21.31) 
+2021-12-03 11:54:44,131 [Thread-5] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 11:54:44,177 [Thread-5] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated... 
+2021-12-03 11:54:44,630 [Thread-5] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed. 
+2021-12-03 11:54:45,245 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 19500 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 11:54:45,246 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 11:54:46,103 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 11:54:46,109 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 4 ms. Found 0 JPA repository interfaces. 
+2021-12-03 11:54:48,003 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 11:54:48,006 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 11:54:48,007 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 11:54:48,186 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 11:54:48,187 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 2927 ms 
+2021-12-03 11:54:51,653 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 11:54:51,671 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Starting... 
+2021-12-03 11:54:51,687 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Start completed. 
+2021-12-03 11:54:51,688 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 11:54:57,718 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 11:54:57,719 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 11:54:57,762 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 11:54:58,340 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 11:54:58,419 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 11:54:58,430 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 13.311 seconds (JVM running for 5682.542) 
+2021-12-03 11:54:58,461 [restartedMain] [36mo.s.b.d.a.ConditionEvaluationDeltaLoggingListener[0;39m - Condition evaluation unchanged 
+2021-12-03 11:54:59,848 [Thread-7] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 11:54:59,851 [Thread-7] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Shutdown initiated... 
+2021-12-03 11:54:59,870 [Thread-7] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Shutdown completed. 
+2021-12-03 11:55:00,483 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 19500 (D:\AkramSpringBoot\book_my_doc\target\classes started by ANAND in D:\AkramSpringBoot\book_my_doc) 
+2021-12-03 11:55:00,484 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 11:55:01,230 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 11:55:01,236 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces. 
+2021-12-03 11:55:01,974 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 11:55:01,977 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 11:55:01,977 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 11:55:02,142 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 11:55:02,143 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 1654 ms 
+2021-12-03 11:55:02,711 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 11:55:02,727 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-3 - Starting... 
+2021-12-03 11:55:02,738 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-3 - Start completed. 
+2021-12-03 11:55:02,739 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 11:55:05,178 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 11:55:05,179 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 11:55:05,273 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 11:55:05,804 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 11:55:05,840 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 11:55:05,848 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 5.468 seconds (JVM running for 5689.96) 
+2021-12-03 11:55:05,851 [restartedMain] [36mo.s.b.d.a.ConditionEvaluationDeltaLoggingListener[0;39m - Condition evaluation unchanged 
+2021-12-03 12:48:55,459 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 10344 (D:\AkramSpringBoot\book-my-doctor\target\classes started by ANAND in D:\AkramSpringBoot\book-my-doctor) 
+2021-12-03 12:48:55,462 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 12:48:55,746 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-12-03 12:48:55,747 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-12-03 12:48:57,947 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 12:48:58,019 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 21 ms. Found 0 JPA repository interfaces. 
+2021-12-03 12:48:59,869 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 12:48:59,893 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 12:48:59,894 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 12:49:00,342 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 12:49:00,344 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 4594 ms 
+2021-12-03 12:49:00,864 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 12:49:01,074 [restartedMain] [36mo.h.Version[0;39m - HHH000412: Hibernate ORM core version 5.6.1.Final 
+2021-12-03 12:49:01,612 [restartedMain] [36mo.h.a.c.Version[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-12-03 12:49:01,911 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Starting... 
+2021-12-03 12:49:02,499 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Start completed. 
+2021-12-03 12:49:02,573 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 12:49:03,236 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Failed to initialize JPA EntityManagerFactory: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.te.springboot.bookmydoc.model.DoctorAvailability.days_of_week[com.te.springboot.bookmydoc.model.DaysOfWeek] 
+2021-12-03 12:49:03,238 [restartedMain] [36mo.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.te.springboot.bookmydoc.model.DoctorAvailability.days_of_week[com.te.springboot.bookmydoc.model.DaysOfWeek] 
+2021-12-03 12:49:03,243 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated... 
+2021-12-03 12:49:03,276 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed. 
+2021-12-03 12:49:03,284 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Stopping service [Tomcat] 
+2021-12-03 12:49:03,321 [restartedMain] [36mo.s.b.a.l.ConditionEvaluationReportLoggingListener[0;39m - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2021-12-03 12:49:03,701 [restartedMain] [36mo.s.b.SpringApplication[0;39m - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.te.springboot.bookmydoc.model.DoctorAvailability.days_of_week[com.te.springboot.bookmydoc.model.DaysOfWeek]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290)
+	at com.te.springboot.bookmydoc.BookMyDocApplication.main(BookMyDocApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: Use of @OneToMany or @ManyToMany targeting an unmapped class: com.te.springboot.bookmydoc.model.DoctorAvailability.days_of_week[com.te.springboot.bookmydoc.model.DaysOfWeek]
+	at org.hibernate.cfg.annotations.CollectionBinder.bindManyToManySecondPass(CollectionBinder.java:1351)
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:874)
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:799)
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:53)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1678)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1646)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:295)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 21 common frames omitted
+2021-12-03 12:51:03,344 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 20660 (D:\AkramSpringBoot\book-my-doctor\target\classes started by ANAND in D:\AkramSpringBoot\book-my-doctor) 
+2021-12-03 12:51:03,348 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 12:51:03,616 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-12-03 12:51:03,618 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-12-03 12:51:05,865 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 12:51:05,907 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces. 
+2021-12-03 12:51:08,040 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 12:51:08,063 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 12:51:08,064 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 12:51:08,363 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 12:51:08,365 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 4744 ms 
+2021-12-03 12:51:08,714 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 12:51:08,849 [restartedMain] [36mo.h.Version[0;39m - HHH000412: Hibernate ORM core version 5.6.1.Final 
+2021-12-03 12:51:09,356 [restartedMain] [36mo.h.a.c.Version[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-12-03 12:51:09,583 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Starting... 
+2021-12-03 12:51:09,872 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Start completed. 
+2021-12-03 12:51:09,921 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 12:51:15,229 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 12:51:15,251 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 12:51:15,411 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 12:51:16,552 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 12:51:16,656 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 12:51:16,696 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 15.031 seconds (JVM running for 18.586) 
+2021-12-03 12:53:55,095 [Thread-5] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 12:53:55,106 [Thread-5] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown initiated... 
+2021-12-03 12:53:55,154 [Thread-5] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Shutdown completed. 
+2021-12-03 12:53:55,636 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15.0.2 on LAPTOP-HVK7614P with PID 20660 (D:\AkramSpringBoot\book-my-doctor\target\classes started by ANAND in D:\AkramSpringBoot\book-my-doctor) 
+2021-12-03 12:53:55,637 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 12:53:56,538 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 12:53:56,546 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces. 
+2021-12-03 12:53:57,062 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 9090 (http) 
+2021-12-03 12:53:57,064 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 12:53:57,067 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 12:53:57,166 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 12:53:57,167 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 1521 ms 
+2021-12-03 12:53:57,400 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 12:53:57,420 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Starting... 
+2021-12-03 12:53:57,454 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Start completed. 
+2021-12-03 12:53:57,455 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect 
+2021-12-03 12:54:01,962 [restartedMain] [36mo.h.e.t.j.p.i.JtaPlatformInitiator[0;39m - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021-12-03 12:54:01,963 [restartedMain] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 12:54:02,014 [restartedMain] [36mo.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration[0;39m - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-12-03 12:54:02,595 [restartedMain] [36mo.s.b.d.a.OptionalLiveReloadServer[0;39m - LiveReload server is running on port 35729 
+2021-12-03 12:54:02,688 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat started on port(s): 9090 (http) with context path '' 
+2021-12-03 12:54:02,700 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Started BookMyDocApplication in 7.279 seconds (JVM running for 184.589) 
+2021-12-03 12:54:02,713 [restartedMain] [36mo.s.b.d.a.ConditionEvaluationDeltaLoggingListener[0;39m - Condition evaluation unchanged 
+2021-12-03 13:25:16,493 [HikariPool-2 housekeeper] [36mc.z.h.p.HikariPool[0;39m - HikariPool-2 - Thread starvation or clock leap detected (housekeeper delta=5m47s195ms349µs100ns). 
+2021-12-03 13:26:06,318 [RMI TCP Connection(35)-127.0.0.1] [36mo.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[0;39m - Application shutdown requested. 
+2021-12-03 13:26:06,320 [RMI TCP Connection(36)-127.0.0.1] [36mo.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin[0;39m - Application shutdown requested. 
+2021-12-03 13:26:06,359 [RMI TCP Connection(35)-127.0.0.1] [36mo.s.o.j.LocalContainerEntityManagerFactoryBean[0;39m - Closing JPA EntityManagerFactory for persistence unit 'default' 
+2021-12-03 13:26:06,361 [RMI TCP Connection(35)-127.0.0.1] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Shutdown initiated... 
+2021-12-03 13:26:06,372 [RMI TCP Connection(35)-127.0.0.1] [36mc.z.h.HikariDataSource[0;39m - HikariPool-2 - Shutdown completed. 
+2021-12-03 17:25:23,873 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - Starting BookMyDocApplication using Java 15 on LAPTOP-VNLAIDI8 with PID 13536 (C:\Techno_Elevate_SpringToolSuit\book-my-doctor\target\classes started by manju in C:\Techno_Elevate_SpringToolSuit\book-my-doctor) 
+2021-12-03 17:25:23,893 [restartedMain] [36mc.t.s.b.BookMyDocApplication[0;39m - No active profile set, falling back to default profiles: default 
+2021-12-03 17:25:24,539 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021-12-03 17:25:24,540 [restartedMain] [36mo.s.b.d.e.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021-12-03 17:25:28,008 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021-12-03 17:25:28,048 [restartedMain] [36mo.s.d.r.c.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces. 
+2021-12-03 17:25:30,073 [restartedMain] [36mo.s.b.w.e.t.TomcatWebServer[0;39m - Tomcat initialized with port(s): 8080 (http) 
+2021-12-03 17:25:30,100 [restartedMain] [36mo.a.c.c.StandardService[0;39m - Starting service [Tomcat] 
+2021-12-03 17:25:30,101 [restartedMain] [36mo.a.c.c.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.55] 
+2021-12-03 17:25:30,370 [restartedMain] [36mo.a.c.c.C.[.[.[/][0;39m - Initializing Spring embedded WebApplicationContext 
+2021-12-03 17:25:30,372 [restartedMain] [36mo.s.b.w.s.c.ServletWebServerApplicationContext[0;39m - Root WebApplicationContext: initialization completed in 5831 ms 
+2021-12-03 17:25:30,812 [restartedMain] [36mo.h.j.i.u.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021-12-03 17:25:30,931 [restartedMain] [36mo.h.Version[0;39m - HHH000412: Hibernate ORM core version 5.6.1.Final 
+2021-12-03 17:25:31,355 [restartedMain] [36mo.h.a.c.Version[0;39m - HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021-12-03 17:25:31,688 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Starting... 
+2021-12-03 17:25:51,532 [restartedMain] [36mc.z.h.HikariDataSource[0;39m - HikariPool-1 - Start completed. 
+2021-12-03 17:25:52,127 [restartedMain] [36mo.h.d.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect 
